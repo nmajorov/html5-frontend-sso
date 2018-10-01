@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+      <title>Keycloak Example App</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="js/jquery-3.3.1.min.js">
+      </script>
+      <script type="text/javascript" src="js/bootstrap.min.js">
+      </script>
+      <script src="js/rh-sso-7.2-js-adapter/keycloak.js">
+      </script>
+      <script src="js/app-jq.js">
+      </script>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarCollapse" aria-controls="navbarCollapse"   aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home<span class="sr-only">(current)</span>
+            </a>
+          </li>
+          </ul>
+          
+          <div class="container">
+              <div class="row justify-content-md-center">
+
+
+            <div class="col col-md-auto">
+              <button id="nav-login-btn" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="keycloak.login()">Login</button>
+            </div>
+
+            <div class="col col-lg-2">
+              <button id="nav-user-info-btn" class="btn btn-info" type="submit">UserInfo</button>
+            </div>
+        
+            <button id="nav-logout-btn" class="btn btn-warning" type="submit" onclick="keycloak.logout()">Logout</button>
+          </div> 
+
+        </div>
+      </div>
+    </nav>
+    <main role="main" class="container">
+      <h2>Address list</h2>
+      <div class="container-fluid">
+        <div id="addressList">
+          <table class="table">
+            <thead>
+            </thead>
+            <tbody id="addressListTBODY">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
