@@ -1,6 +1,7 @@
 {
   "realm": "demo",
-  "auth-server-url": "http://secure-sso-rh-sso.az.40.113.104.49.xip.io/auth",
+  "auth-server-url": "http://sso-rh-sso.az.40.113.104.49.xip.io/auth",
+  "ssl-required": "none",
   "resource": "html5-frontend",
   "public-client": true,
   "confidential-port": 0
