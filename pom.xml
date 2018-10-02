@@ -29,7 +29,7 @@
 
 
     <build>
-        <finalName>html5-frontend</finalName>
+        <finalName>ROOT</finalName>
 
         <plugins>
         <plugin>
