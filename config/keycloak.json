@@ -1,8 +1,8 @@
 {
-  "realm": "demo",
-  "auth-server-url": "http://sso-rh-sso.az.40.113.104.49.xip.io/auth",
+  "realm": "nikorealm",
+  "auth-server-url": "https://secure-sso-sso-0643.apps.rhpds311.openshift.opentlc.com/auth",
   "ssl-required": "none",
-  "resource": "html5-frontend",
+  "resource": "eap",
   "public-client": true,
   "confidential-port": 0
 }
